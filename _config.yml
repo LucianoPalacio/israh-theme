@@ -1,0 +1,57 @@
+title: Israh Theme
+email: your@email.here
+greeting: Israh Theme
+description: > # this means to ignore newlines until another tag
+    Israh is a responsive Jekyll theme with warm greys, a single column layout, and not much else.
+favicon: favicon.png
+navlinks:
+    -
+        text: Home
+        url: /
+        internal: True
+    -
+        text: The Theme
+        url: /theme
+        internal: True
+    -
+        text: Github
+        url: https://www.github.com #Can put your github user
+        internal: False
+    -
+        text: LinkedIn
+        url: https://www.linkedin.com/ #Can put your lindekind user
+        internal: False
+
+# Build settings
+paginate: 3
+baseurl: "" # the subpath of your site, e.g. /blog/
+#baseurl: ""
+url: "" # the base hostname & protocol for your site
+highlights: pygments
+permalink: posts/:title/
+include: ["_pages"]
+plugins: [jekyll-paginate]
+markdown: kramdown
+excerpt_separator: "<!--more-->"
+
+defaults:
+    -
+        scope:
+            path: ""
+        values:
+            layout: "default"
+    -
+        scope:
+            path: ""
+            type: "posts"
+        values:
+            author: "Your name"
+            layout: "post"
+    -
+        scope:
+            path: ""
+            type: "pages"
+        values:
+            author: "Your name"
+            layout: "page"
+
